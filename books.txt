@@ -1,0 +1,10 @@
+1984,George Orwell,1949,328
+Harry Potter ve Felsefe Taşı,J.K. Rowling,1997,352 
+Suç ve Ceza,Fyodor Dostoyevsky,1866,671 
+Yüzüklerin Efendisi: Yüzük Kardeşliği,J.R.R. Tolkien,1954,423 
+Ulysses,James Joyce,1922,730
+Yüzyıllık Yalnızlık,Gabriel García Márquez,1967,417
+Anna Karenina,Leo Tolstoy,1877,864 
+Çocukluğun Sonu,Arthur C. Clarke,1953,224 
+Moby Dick,Herman Melville,1851,624 
+Savaş ve Barış,Leo Tolstoy,1869,1225
