@@ -1,6 +1,11 @@
 class Library:
-    def __init__(self, filename='books.txt'):
+    def __init__(self, filename='b.txt'):
         self.filename = filename
+        self.file = open(self.filename, "+a")
+
+    def __del__(self):
+        if hasattr(self, 'file') and self.file:
+            self.file.close()
 
     def listBooks(self):
         try:
@@ -52,6 +57,7 @@ class Library:
 
 
 library = Library()
+library.__init__()
 options = 0
 
 while options != 4:
@@ -74,8 +80,7 @@ while options != 4:
         print('--------------------')
 
 print("Exiting the program.")
-     
 
-
+library.__del__()
 
         
