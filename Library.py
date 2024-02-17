@@ -52,17 +52,29 @@ class Library:
 
 
 library = Library()
-options = int(input(' 1 to list books,\n 2 to add a book,\n 3 to remove a book: '))
-if(options == 1 ):
-    library.listBooks()
-    print('--------------------')
-elif(options == 2 ):
-    library.addBook()
-    print('--------------------')
-elif(options == 3 ):
-    library.removeBook() 
-    print('--------------------')
+options = 0
+
+while options != 4:
+    options = input(' 1 to list books \n 2 to add a book \n 3 to remove a book \n 4 to Exit \n Pick a number: ')
     
+    if options not in {'1', '2', '3', '4'}:
+        print("Invalid option. Please choose again.")
+        continue
+    
+    options = int(options)
+    
+    if options == 1:
+        library.listBooks()
+        print('--------------------')
+    elif options == 2:
+        library.addBook()
+        print('--------------------')
+    elif options == 3:
+        library.removeBook() 
+        print('--------------------')
+
+print("Exiting the program.")
+     
 
 
 
