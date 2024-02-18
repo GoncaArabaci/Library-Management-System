@@ -1,5 +1,5 @@
 class Library:
-    def __init__(self, filename='b.txt'):
+    def __init__(self, filename='booksList.txt'):
         self.filename = filename
         self.file = open(self.filename, "+a")
 
@@ -24,7 +24,7 @@ class Library:
         author = input("Enter the author: ")
         releaseDate = input("Enter the first release year: ")
         numberOfPages = input("Enter the number of pages: ")
-        book = f'{name},{author},{releaseDate},{numberOfPages},{numberOfPages}\n'
+        book = f'{name},{author},{releaseDate},{numberOfPages}\n'
         try:
             with open(self.filename, 'a') as file:
                 file.write(book)
@@ -57,7 +57,6 @@ class Library:
 
 
 library = Library()
-library.__init__()
 options = 0
 
 while options != 4:
@@ -80,7 +79,3 @@ while options != 4:
         print('--------------------')
 
 print("Exiting the program.")
-
-library.__del__()
-
-        
